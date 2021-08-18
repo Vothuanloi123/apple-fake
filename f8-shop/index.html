@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Thống kê điểm số</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <header>
+           <div id="thongtintruong">
+               <h3>Trường đại học công nghệ TP.HCM</h3>
+               <h3>Niên khóa 2020-2024</h3>
+           </div>
+       </header>
+       <main>
+            <div id="thongtinweb">
+                <h3>Website thông báo điểm quá trình các môn</h3>
+                <p>(Thay thế Website đào tạo chính của trường vì lí do đang bảo trì)</p>
+        </div>
+        <div id="hinhthucthi">
+            <h4>Bảng hình thức thi các môn:</h4>
+            <table>
+                <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên môn học</th>
+                            <th>Thời gian thi</th>
+                            <th>Hình thức thi</th>
+                        </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Thực hành hệ điều hành máy tính</td>
+                            <td>90 phút</td>
+                            <td>Thực hành trực tuyến</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Giải tích</td>
+                            <td>90 phút</td>
+                            <td>Trắc nghiệm tại trường</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Tiếng anh 2</td>
+                            <td>90 phút</td>
+                            <td>Trắc nghiệm kết hợp tự luận trực tiếp</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Vovinam 2</td>
+                            <td>30 phút</td>
+                            <td>Thi tại trường</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>GDANQP 4</td>
+                            <td>60 phút</td>
+                            <td>Thi tại trường</td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="ghichuhinhthuc">
+            <p>Ghi chú:</p>
+            <p class="ghichu1">Đối với các môn thi trực tuyến, thí sinh thi trên Google Forms.</p>
+            <p class="ghichu1">Đối Với cách môn thi tại trường, thi sinh sẽ thi sau dịch.</p>
+        </div>
+        <div id="khaosatsinhvien">
+            <h3>Khảo sát sinh viên:</h3>
+            <div>
+                <p>Tên sinh viên:</p>
+                <input type="text">
+                <p>Mã số sinh viên:</p>
+                <input type="text">
+                <p>Mật khẩu đăng nhập Website đào tạo:</p>
+                <input type="password">
+                <p>1. Bạn có đồng ý với hình các hình thức thi trên không ?</p>
+                <p><input name="chon1" type="radio">Đồng ý.</p>
+                <p><input name="chon1" type="radio">Không đồng ý.</p>
+                <p>(Nếu bạn không đồng ý, mời bạn nhập vào tên môn bạn không đồng ý)</p>
+                <input type="text">
+                <p>2. Bạn có thấy tin tưởng, công bằng với hình thức thi trắc nghiệm trực tuyến ?</p>
+                <p><input name="chon2" type="radio">Tin tưởng.</p>
+                <p><input name="chon2" type="radio">Không tin tưởng.</p>
+                <p><input name="chon2" type="radio">Chưa suy nghĩ.</p>
+                <p>3. Bạn có đầy đủ các buổi học Online hay không ?</p>
+                <p><input name="chon3" type="radio">Đầy đủ.</p>
+                <p><input name="chon3" type="radio">Không đầy đủ.</p>
+                <p><input name="chon3" type="radio">Chưa tham gia học.</p>
+                <p>(Cảm ơn bạn đã gửi thông tin)</p>
+                <input type="button" value="Gửi thông tin" style="background-color: #9fdfbf;">
+            </div>
+        </div>
+        <div id="bangdiem">
+            <h3>Top 10 sinh viên điểm tốt</h3>
+            <p>(Môn thực hành hệ điều hành máy tính)</p>
+            <table id="bangdiem1">
+                <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Họ và tên</th>
+                            <th>Tên môn học</th>
+                            <th>Điểm số</th>
+                            <th>Xếp loại</th>
+                        </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td id="name">Võ Thuận Lợi</td>
+                            <td>Thực hành hệ điều hành máy tính</td>
+                            <td>10.0</td>
+                            <td>Giỏi</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td id="name">Vương Hỷ Khang</td>
+                            <td>Thực hành hệ điều hành máy tính</td>
+                            <td>9.5</td>
+                            <td>Giỏi</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td id="name">Lâm Tuấn Kiệt</td>
+                            <td>Thực hành hệ điều hành máy tính</td>
+                            <td>9.2</td>
+                            <td>Giỏi</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td id="name">Đinh Công Thông</td>
+                            <td>Thực hành hệ điều hành máy tính</td>
+                            <td>9.0</td>
+                            <td>Giỏi</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td id="name">Nguyễn Hồ Khắc Huy</td>
+                            <td>Thực hành hệ điều hành máy tính</td>
+                            <td>8.7</td>
+                            <td>Giỏi</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td id="name">Khưu Đại Hảo</td>
+                            <td>Thực hành hệ điều hành máy tính</td>
+                            <td>8.0</td>
+                            <td>Giỏi</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td id="name">Trần Lê Minh Hiếu</td>
+                            <td>Thực hành hệ điều hành máy tính</td>
+                            <td>7.8</td>
+                            <td>Khá</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td id="name">Liều Lý Kỳ</td>
+                            <td>Thực hành hệ điều hành máy tính</td>
+                            <td>7.4</td>
+                            <td>Khá</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td id="name">Hồ Phú Tài</td>
+                            <td>Thực hành hệ điều hành máy tính</td>
+                            <td>7.2</td>
+                            <td>Khá</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td id="name">Nguyễn Quốc Hòa</td>
+                            <td>Thực hành hệ điều hành máy tính</td>
+                            <td>7.0</td>
+                            <td>Khá</td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+       </main>
+       <footer>
+            
+       </footer>
+    </body>
+</html>

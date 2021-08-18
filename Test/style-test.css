@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: roboto, arial, helvetica;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.ti-angle-down{
+    font-size: 20px;
+}
+
+.item{
+    margin: auto 20px;
+}
+
+.nav-item{
+    padding: 10px;
+    width: auto;
+    display: block;
+    position: relative;
+}
+
+.nav-item:hover{
+    background-color: gray !important;
+}
+
+.nav-right{
+    margin: auto 20px;
+}
+
+.ti-search{
+    margin: auto 5px;
+}
+
+.ti-search:hover{
+    color: bisque;
+}
+
+.list-item-child{
+    top: 100%;
+    left: 0px;
+    background-color: none;
+    color: black;
+    position: absolute;
+    animation: list-nav ease-in 1s;
+    display: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    list-style: none;
+
+}
+
+.item-last:hover .list-item-child{
+    display: block;
+}
+
+.item-child{
+    padding: 10px 20px 10px 20px;
+
+}
+
+.item-child:hover{
+    background-color: gray;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+@keyframes list-nav{
+    form{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.nav-right{
+    position: relative;
+}
+
+.choose-sign-up:hover .sign-up-form{
+    display: block;
+}
+
+.sign-up-form{
+    top: 100%;
+    right: 0px;
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 150px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: none;
+}
+
+.header-sign-up-form{
+    background-color: gray;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.title-sign-up-form{
+    font-weight: 200;
+}
+
+.header-sign-up-form:hover{
+    background-color:green;
+}
+
+@keyframes sign-up{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.nav-login{
+    position: relative;
+
+}
+
+.nav-login:hover .login-form{
+    display: block;
+}
+
+.login-form{
+    top: 100%;
+    right: 0px;
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: 150px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: none;
+}
+
+.header-login-form{
+    background-color: gray;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.title-login-form{
+    font-weight: 300;
+}
+
+.header-login-form:hover{
+    background-color:green;
+}
+
+@keyframes login-animation {
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
